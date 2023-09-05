@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MenuFragment">
+
+   <Button
+       android:id="@+id/b_all_users"
+       android:layout_width="250dp"
+       android:layout_height="55dp"
+       android:background="@drawable/gg"
+       app:backgroundTint="@null"
+       android:text="Barcha fucorolar"/>
+    <Button
+        android:id="@+id/b_add_user"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="55dp"
+        android:background="@drawable/gg"
+        app:backgroundTint="@null"
+        android:text="Fucoroga passport berish"/>
+
+
+</LinearLayout>

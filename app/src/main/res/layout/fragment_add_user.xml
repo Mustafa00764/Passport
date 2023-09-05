@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.AddUserFragment">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/greencolor"
+        android:layout_height="?actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/greencolor"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_back_ios"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fuqora"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Ism"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_familiya"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Familiya"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_dad_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Otasinig ism"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_viloyat"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Viloyat"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_tuman"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Tuman"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/passport"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="PassportSeriyasi number"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_olingan_vaqti"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Olingan vaqti"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_muddati"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="Muddati"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+            <EditText
+                android:id="@+id/et_gender"
+                android:layout_width="match_parent"
+                android:background="@drawable/adit"
+                android:layout_marginTop="10dp"
+                android:hint="jinsi"
+                android:paddingHorizontal="5dp"
+                android:textSize="20dp"
+                android:layout_height="56dp"/>
+
+            <Button
+                android:id="@+id/b_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

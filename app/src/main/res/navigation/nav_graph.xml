@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.passport.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.example.passport.ui.fragment.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" >
+        <action
+            android:id="@+id/action_addUserFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allUsersFragment"
+        android:name="com.example.passport.ui.fragment.AllUsersFragment"
+        android:label="fragment_all_users"
+        tools:layout="@layout/fragment_all_users" >
+        <action
+            android:id="@+id/action_allUsersFragment_to_dataiUserFragment"
+            app:destination="@id/dataiUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataiUserFragment"
+        android:name="com.example.passport.ui.fragment.DataiUserFragment"
+        android:label="fragment_datai_user"
+        tools:layout="@layout/fragment_datai_user" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.passport.ui.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_allUsersFragment"
+            app:destination="@id/allUsersFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_addUserFragment"
+            app:destination="@id/addUserFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_addUserFragment2"
+            app:destination="@id/addUserFragment" />
+    </fragment>
+</navigation>
